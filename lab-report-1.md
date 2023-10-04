@@ -1,7 +1,7 @@
 Lab Report 1
 ============
-Enrique Aranda
---------------
+_Enrique Aranda_
+
 
 __cd__
 1. No argument
