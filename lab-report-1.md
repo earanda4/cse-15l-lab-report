@@ -63,17 +63,7 @@ The working directory was on lecture1. The output returned states that the messa
 
 3. File argument
 ```
-[user@sahara ~/lecture1]$ cat Hello.java
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-
-public class Hello {
-  public static void main(String[] args) throws IOException {
-    String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
-    System.out.println(content);
-  }
-}
+[user@sahara ~/lecture1]$ cat messages/en-us.txt
+Hello World!
 ```
-The working directory was on lecture1. The output returned is all the code of the Hello.java file, since Hello.java was the argument. The output of this command was not an error, the command works as intended.
+The working directory was on lecture1. The output returned is the code of the message in English found in messages/en-us.txt, since that file was the argument. The output of this command was not an error, the command works as intended.
