@@ -32,3 +32,4 @@ Terminal interaction where I log into ieng6 without being asked for a password:
 
 ---
 __Part 3:__
+The main thing I learned in lab recently was the ability to bypass typing in the password to log into ssh. This is by far the most useful thing I've learned in lab as it saves me 5 seconds writing out my password and prevents any chance of me getting it wrong having to retype it. Another thing I've learned is being able to access your web server from a friend's computer. Last week, when we were running the servers, my labmate was able to access my server from his laptop and alter the contents of it which I found to be interesting.
