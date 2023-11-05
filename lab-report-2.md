@@ -9,8 +9,18 @@ The code for StringServer.java:
 
 Examples of `/add-message` running: 
 1. ![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/326f2e53-23ca-4aaa-929c-3e923ef52c77)
+
+
+Note:
+Before the method was called, the variable `statement` was simply an empty string `""` and the `num` variable was `1` as it depicts the line number.
+After the method was called, `statement` added the string `"Hello"` and `num` incremented by 1.
+
    
 2. ![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/e9cef560-6d0d-49f4-894c-b08930d00465)
+
+
+Note: Before the method was called, `statement` was simply `"Hello"` and `num` was set to `2`. After the method was called, `statement` added the string `"My+name+is"` and `num` incremented by 1 once again.
+
 
 The methods called are the main method in the `StringServer` class and the handleRequest method in the `Handler` class.
 The relevant argument for the main method is the Port number because if the input is not within the specific range, the method will throw out an error. The relevant argument for the handleRequest method is the `/add-message?s=(input)` because it prints out the argument that the user manually types in.
