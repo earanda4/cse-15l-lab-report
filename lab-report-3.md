@@ -3,6 +3,63 @@ Lab Report 3
 _Enrique Aranda_
 
 __Part 1:__
+The bug I will be focusing on is the buggy implementation of the `reverseInPlace` method of the `ArrayExamples` class:
+
+Failure-inducing input:
+```
+ @Test
+  public void testA(){
+    int[] input1 = { 3, 2, 1 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 1, 2, 3 }, input1);
+  }
+```
+
+
+Input that does not induce a test failure:
+```
+@Test
+  public void testC(){
+    int[] input = {1};
+    ArrayExamples.reverseInPlace(input);
+    assertArrayEquals(new int[]{1}, input);
+  }
+```
+
+
+Symptom:
+
+![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/f9699b2a-896e-47c9-a94a-363df43b478f)
+
+
+Bug:
+
+Before: 
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+
+
+After:
+```
+ static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length / 2; i += 1) {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+  }
+```
+
+
+Change: 
+The main fix for the bug was to add a new variable `temp` and to change the for loop to only iterate through half the list. This way, we could set `temp` to the values on the left side of the partition and set the left side to the right side and vice versa with the help of `temp`. 
+
+
 
 
 __Part 2:__
