@@ -71,8 +71,13 @@ Filters out the type of file that you want to find. For instance, regular files 
 ex: ![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/4a48af12-2007-4644-924c-71836c123bb8)
 
 
+The `d` part of the command is filtering out the directories that are in `technical/`.
+
 ex: ![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/63bf7983-a914-4d66-bfc9-6c22ebd35c4b)
 ![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/3f321ba8-55b4-426d-b2c5-8914a9b57934)
+
+
+The `f` part of the command is showing only the files that are in `technical/`.
 
 
 Source: https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/
@@ -84,6 +89,8 @@ If you wanted out to search for a file using its full name you would include it 
 ex: ![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/65c9318e-3434-488d-bd36-b32cbecd4537)
 
 
+I typed in the exact
+
 ex: ![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/364fb962-f6fb-480e-8a87-a2e83e4d7ed8)
 
 Source: https://www.gnu.org/software/findutils/manual/html_node/find_html/Full-Name-Patterns.html
@@ -93,6 +100,9 @@ You can filter out the find through its size. After `-size`, you include the siz
 
 
 ex:![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/d95b91d2-7e40-4ad8-b14d-c4b1ce657ffd)
+
+
+The `+100k` is filtering through
 
 
 ex: ![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/fd84d0dc-9d01-43c8-8c36-e7409275df9f)
