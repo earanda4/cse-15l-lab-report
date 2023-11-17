@@ -6,7 +6,7 @@ __Part 1:__
 The bug I will be focusing on is the buggy implementation of the `reverseInPlace` method of the `ArrayExamples` class:
 
 Failure-inducing input:
-```
+``` cpp
  @Test
   public void testA(){
     int[] input1 = { 3, 2, 1 };
@@ -17,7 +17,7 @@ Failure-inducing input:
 
 
 Input that does not induce a test failure:
-```
+``` cpp
 @Test
   public void testC(){
     int[] input = {1};
@@ -35,7 +35,7 @@ Symptom:
 Bug:
 
 Before: 
-```
+``` cpp
 static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
@@ -45,7 +45,7 @@ static void reverseInPlace(int[] arr) {
 
 
 After:
-```
+``` cpp
  static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length / 2; i += 1) {
       int temp = arr[i];
