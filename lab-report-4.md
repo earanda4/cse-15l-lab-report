@@ -16,10 +16,10 @@ Step 5:
 Command line: 
 ``` cpp
   git clone https://github.com/ucsd-cse15l-s23/lab7
+  cd lab7
 ```
 
-This is to clone my fork of the repository. 
-
+This is to clone my fork of the repository. Then, you change directory into the `lab7` directory.
 
 
 Step 6:
@@ -29,6 +29,10 @@ Command line:
 ```
 
 The bash command runs the test script, and the results show that they fail.
+
+
+![image](https://github.com/earanda4/cse-15l-lab-report/assets/130427635/45360325-150b-4bb3-aae2-295c188e5fe1)
+
 
 
 Step 7:
